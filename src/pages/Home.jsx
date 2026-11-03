@@ -12,7 +12,7 @@ const Home = () => {
 
   // 1. Fetch initial products from backend
   useEffect(() => {
-    fetch("http://localhost:5000/api/products")
+    fetch("https://bytecart-12wk.onrender.com/api/products")
       .then((r) => r.json())
       .then((data) => {
         const list = Array.isArray(data) ? data : [];

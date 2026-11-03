@@ -32,7 +32,7 @@ const Login = () => {
 
     try {
       // Backend Login API call
-      const res = await fetch("http://localhost:5000/api/users/login", {
+      const res = await fetch("https://bytecart-12wk.onrender.com/api/users/login", {
         method: "POST",
         headers: { "Content-Type": "application/json" },
         body: JSON.stringify({
@@ -80,7 +80,7 @@ const Login = () => {
     setError("");
 
     try {
-      const res = await fetch("http://localhost:5000/api/users/register", {
+      const res = await fetch("https://bytecart-12wk.onrender.com/api/users/register", {
         method: "POST",
         headers: { "Content-Type": "application/json" },
         body: JSON.stringify({
@@ -121,7 +121,7 @@ const Login = () => {
 
     setLoading(true);
     try {
-      const res = await fetch("http://localhost:5000/api/users/reset-password", {
+      const res = await fetch("https://bytecart-12wk.onrender.com/api/users/reset-password", {
         method: "POST",
         headers: { "Content-Type": "application/json" },
         body: JSON.stringify({

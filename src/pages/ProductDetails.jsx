@@ -10,7 +10,7 @@ const ProductDetails = () => {
   const [addedMsg, setAddedMsg] = useState(false);
 
   useEffect(() => {
-    fetch("http://localhost:5000/api/products")
+    fetch("https://bytecart-12wk.onrender.com/api/products")
       .then((res) => res.json())
       .then((data) => {
         const found = data.find((item) => String(item._id) === String(id));

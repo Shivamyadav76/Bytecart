@@ -31,7 +31,7 @@ const ProductDetail = () => {
 
   // 1. Fetch Product Data
   useEffect(() => {
-    fetch(`http://localhost:5000/api/products/${id}`)
+    fetch(`https://bytecart-12wk.onrender.com/api/products/${id}`)
       .then((res) => {
         if (!res.ok) throw new Error("ID route missed");
         return res.json();
@@ -46,7 +46,7 @@ const ProductDetail = () => {
       })
       .catch(() => {
         // Fallback: match from list
-        fetch("http://localhost:5000/api/products")
+        fetch("https://bytecart-12wk.onrender.com/api/products")
           .then((r) => r.json())
           .then((list) => {
             const arr = Array.isArray(list) ? list : [];

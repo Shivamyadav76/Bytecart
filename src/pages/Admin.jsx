@@ -11,7 +11,7 @@ const Admin = () => {
   });
 
   const loadProducts = () => {
-    fetch("http://localhost:5000/api/products")
+    fetch("https://bytecart-12wk.onrender.com/api/products")
       .then((r) => r.json())
       .then((d) => setProducts(Array.isArray(d) ? d : []));
   };
